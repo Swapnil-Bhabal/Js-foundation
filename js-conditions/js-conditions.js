@@ -48,3 +48,21 @@ if (loggedInUser) {
 } else {
     console.log(`Welcome ${loggedInUser}`);
 }
+
+
+//Full fledged if else conditions for check in inside of party which has drink in it
+
+age = 100;
+let state = 'cringe';
+
+if (state === 'cringe') {
+    console.log('Entry denied');
+} else if (age >= 18 && age < 21) {
+    console.log('Entry granted');
+} else if (age >=21 && age < 65) {
+    console.log('Drinks Allowed');
+} else if (age > 65) {
+    console.log('Drinks Free!!!');
+} else {
+    console.log('ENTRY DENIED');
+}
