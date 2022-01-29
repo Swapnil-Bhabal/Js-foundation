@@ -130,3 +130,12 @@ switch (month) {
     default:
         console.log('INVALID MONTH');
 }
+
+
+//----TERNARY CONDITIONAL OPERATOR----
+
+//It is a great substitute and a handy way of writing simple conditions in one line rather using multiple lines of if-else
+
+num = 4;
+
+num === 7 ? console.log('LUCKY') : console.log('UNLUCKY');
