@@ -1,3 +1,5 @@
+//------ALL ABOUT IF-ELSE-------
+
 let age = 21;
 
 if (age > 18) {                         //Normal If condition
@@ -65,4 +67,66 @@ if (state === 'cringe') {
     console.log('Drinks Free!!!');
 } else {
     console.log('ENTRY DENIED');
+}
+
+
+//------ALL ABOUT SWITCH CASE-------
+
+let day = 1;
+
+switch (day) {
+    case 1:
+        console.log("MONDAY");
+        break;
+    case 2:
+        console.log("TUESDAY");
+        break;
+    case 3:
+        console.log("WEDNESDAY");
+        break;
+    case 4: 
+        console.log("THURSDAY");
+        break;
+    case 5:
+        console.log("FRIDAY");
+        break;
+    case 6:
+        console.log("SATURAY");
+        break;
+    case 7:
+        console.log("SUNDAY");
+        break;
+    default:
+        console.log("INVALID DAY");
+}
+
+//Grouping the cases
+
+let month = 1; 
+
+switch (month) {
+    case 12:
+    case 1:
+        console.log("Winters");
+        break;
+    case 2:
+    case 3:    
+        console.log("Springs");
+        break;
+    case 4:
+    case 5:
+    case 6:
+        console.log("Summers");
+        break;
+    case 7:
+    case 8:
+    case 9:
+        console.log("Rainy");
+        break;
+    case 10:
+    case 11:
+        console.log("Autumn");
+        break;
+    default:
+        console.log('INVALID MONTH');
 }
