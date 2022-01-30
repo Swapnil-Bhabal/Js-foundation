@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add7(number) {
+            return (number + 7);
+        }
+
+        function multiply(a, b) {
+            return (a * b);
+        }
+
+        function capitalize(str) {
+            let capitalizedText = str.charAt(0).toUpperCase() + str.slice(1,str.length).toLowerCase();
+            return (capitalizedText);
+        }
+
+        function lastLetter(str) {
+            let lastLetter = str.charAt(str.length - 1);
+            return (lastLetter);
+        }
+
+        console.log(add7(1));
+        console.log(multiply(3,2));
+        console.log(capitalize("sWAPNIL"));
+        console.log(lastLetter("Swapnil"));
+    </script>
+</body>
+</html>
