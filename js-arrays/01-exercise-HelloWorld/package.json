@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "jasmine": "^4.0.2"
+  },
+  "spec_files": [
+    "**/*[sS]pec.js"
+  ],
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
