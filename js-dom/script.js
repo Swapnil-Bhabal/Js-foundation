@@ -28,3 +28,15 @@ container.appendChild(content);
 container.appendChild(redContent);
 container.appendChild(headThreeContent);
 container.appendChild(newDiv);
+
+
+//Events in DOM
+
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', () => {
+    alert("Hello World");
+})
+
+btn.addEventListener('click', (e) => {              //'e' in the function is an object that references the event itself. Within that object you have access to many useful props and functions.
+    e.target.style.background = 'blue';
+});
