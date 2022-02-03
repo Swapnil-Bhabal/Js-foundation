@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Understanding JavaScript's Capture</title>
+</head>
+<body class="bod">
+
+  <div class="one">
+    <div class="two">
+      <div class="three">
+      </div>
+    </div>
+  </div>
+
+<style>
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after { 
+    box-sizing: inherit; 
+  }
+
+  div {
+    width: 100%;
+    padding: 100px;
+  }
+
+  .one {
+    background: thistle;
+  }
+
+  .two {
+    background: mistyrose;
+  }
+
+  .three {
+    background: coral;
+  }
+</style>
+
+<button></button>
+<script>
+    const divs = document.querySelectorAll('div');
+    const button = document.querySelectorAll('button');
+
+    function logText(e) {
+        console.log(this.classList.value);
+        e.stopPropagation();
+    }
+
+    divs.forEach(div => div.addEventListener('click', logText, {
+        capture: false,
+        once: true
+    }));
+
+    //bubbling is bottom up approach we dont really see them because we dont listen to them, we basically click on every element till body.
+    //when you set the third option to capture true it follows top down approach exact opposite of bubbling; by default it is set to false.
+    //Stop propagation is stop bubbling you will only get to listen the element which you have clicked on
+    //once will listen to the event only once and then remove itself, just like OTP. Its useful when you want to grant user only one chance to click the button
+
+</script>
+</body>
+</html>
+
+
+
